@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icono.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/css de proyecto.css" type="text/css">
+    <title>Registrarse - Deforestación mundial</title>
+</head>
+<body>
+
+    <nav class="sidebar">
+        <div class="sidebar-top">
+            <span class="logo">Mi sitio</span>
+            <button class="boton-menu" id="botonMenu">☰</button>
+        </div>
+
+        <ul>
+            <li><a href="index.html"><span class="icono">🏠</span><span class="texto">Inicio</span></a></li>
+            <li><a href="#"><span class="icono">📚</span><span class="texto">Biblioteca</span></a></li>
+            <li><a href="index.html#datos"><span class="icono">📊</span><span class="texto">Datos</span></a></li>
+            
+            <li><a href="registro.html" class="active"><span class="icono">👤</span><span class="texto">Registrarse</span></a></li>
+            
+        </ul>
+    </nav>
+
+    <script src="java/java.js"></script>
+
+    <div class="contenido">
+        <div>
+            <h1>Registrarse</h1>
+        </div>
+        <div>
+            <h2>Creá tu cuenta</h2>
+        </div>
+        <div>
+            <p class="nota_p">
+                Esta página es una demostración: el formulario todavía no crea cuentas ni guarda datos.
+            </p>
+        </div>
+
+        <div>
+            <form class="formulario" id="formRegistro">
+                <div class="campo">
+                    <label for="usuario">Nombre de usuario</label>
+                    <input type="text" id="usuario" name="usuario" autocomplete="username" required>
+                </div>
+                <div class="campo">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" autocomplete="email" required>
+                </div>
+                <div class="campo">
+                    <label for="clave">Contraseña</label>
+                    <input type="password" id="clave" name="clave" autocomplete="new-password" minlength="6" required>
+                </div>
+                <div class="campo">
+                    <label for="clave2">Repetir contraseña</label>
+                    <input type="password" id="clave2" name="clave2" autocomplete="new-password" minlength="6" required>
+                </div>
+                <button type="submit" class="boton">Registrarme</button>
+                <p class="mensaje" id="mensajeRegistro" aria-live="polite"></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="java/registro.js"></script>
+</body>
+</html>
